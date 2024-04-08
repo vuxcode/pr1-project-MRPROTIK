@@ -1,0 +1,31 @@
+<h1 id="demo">Pick a colour</h1>
+
+
+<button onclick="toggle()">Toggle</button>
+
+var hidden = false;
+
+var output = document.getElementById("demo")
+
+// Save the display state of the element in a variable
+var hidden = false;
+// Find an element with an ID "demo" on the screen
+var output = document.getElementById("demo");
+
+// Create a function to toggle the display of the output element
+function toggle() {
+  // Check if the element is hidden
+  if (hidden) {
+    // In this case show the element again
+    output.style.display = "block";
+    // Change the hidden state
+    hidden = false;
+  }
+  // Otherwise hide the element
+  else {
+    // This code will hide the element
+    output.style.display = "none";
+    // Also change the hidden state to make the toggle work
+    hidden = true;
+  }
+}
