@@ -1,0 +1,28 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Gotham Rounder
+}
+:root{
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+
+}
+
+
+
+body{
+    --hue: var(--hue-neutral);
+        padding: 0;
+    margin: 0;
+    display: flexx;
+    width : 100vh;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(var(--hue), 100% 20%);
+}
+body.correct {
+    --hue: var(var(--hue-correct);    
+
+}
