@@ -1,28 +1,21 @@
-*, *::before, *::after{
-    box-sizing: border-box;
-    font-family: Gotham Rounder
-}
-:root{
-    --hue-neutral: 200;
-    --hue-wrong: 0;
-    --hue-correct: 145;
-
-}
-
-
-
-body{
-    --hue: var(--hue-neutral);
-        padding: 0;
-    margin: 0;
-    display: flexx;
-    width : 100vh;
-    height: 100vh;
+body {
+    font-family: 'Poppins', sans-serif;
+    background:white;
+    display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: hsl(var(--hue), 100% 20%);
-}
-body.correct {
-    --hue: var(var(--hue-correct);    
+  }
+
+  
+  #next-btn{
+    background: yellow;
+    color:black;
+font-weight: 100;
+width: 100px;
+border: 0;
+padding: 10px;
+margin: 20px auto 0;
+border-radius: 5px;
+cursor: pointer;
+display: block;
 
 }
