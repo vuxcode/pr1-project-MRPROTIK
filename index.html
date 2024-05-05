@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Quize App</title>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Quize App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Quick Quize</h1>
-        <div id ="question"></div>
-        <div id ="result" class="result"></div> 
+        <div id ="question-container"></div>
+        <p id ="question"></div> 
+            <div id="options-container"></div>
+            <button id ="submit-btn">Submit</button>
+            <div id="result"></div>
         <button id="start-btn" class="strat-btn">Start</button>
-        <button id="next-btn" class="next-btn-hide">Next</button>
+        <button id="next-btn" style="display: none;">Next Question</button>
 
 </div>
 
