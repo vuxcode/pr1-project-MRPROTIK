@@ -3,16 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>simple quize</title>
+    <title>My Quiz</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <h1>simple-quize</h1>
-    <p id ="question"></p>
-    <p id ="option"></p>
-    <p id ="answer"></p>
-    <button onclick="Quize()">Display the question</button>
+<body> 
+    <div class="container">
+        <h1 class="head">Motiur Quiz App</h1>
+        <div class="Quize">
+            <h2 id="question"></h2>
+        
+            <div>
+                <input type="radio" name="option" id="ans1" class="options" >
+                <label for="ans1" id="option1"></label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="ans2" class="options" >
+                <label for="ans2"  id="option2"></label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="ans3" class="options" >
+                <label  for="ans3" id="option3"></label>
+            </div>
+            <div>
+                <input type="radio" name="option" id="ans4" class="options" >
+                <label for="ans4" id="option4"></label>
+            </div>
+            <div class="btn">
+ <h3 class="my-score"></h3>
+                <button onclick="nextQuestion()">Next</button>
+            </div>
+               
+                
 
-    <script src = "script.js"></script>
+            
+
+
+        </div>
+         
+   
+    </div>
+   
+
+  <script src="script.js"></script>  
 </body>
-
 </html>

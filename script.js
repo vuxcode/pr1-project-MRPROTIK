@@ -25,17 +25,67 @@ var a5 = "B) Praia do Cassino(Brazil)"
 var question = [q1, q2, q3, q4, q5];
 var option = [o1, o2, o3, o4, o5];
 var answer = [a1, a2, a3, a4, a5];
+
+// creat a question opttion reference to HTML elements
+var questionElement = document.getElementById("question");
+var option1Element = document.getElementById("option1")
+var option2Element = document.getElementById("option2")
+var option3Element = document.getElementById("option3")
+var option4Element = document.getElementById("option4")
+var answerElement = document.querySelectorAll("options");
+// Here i am initialize the index
 var index = 0;
-function Quize(){
-    var output = document.getElementById("question");
-    // SHOW THE CURRENT QUESTION
-    output.innerHTML = (question[index]);
-    // WHAT HAPPENS NEXT? You wanted to update the index number!!!!!!!!
-    index++;
-    var output = document.getElementById("option");
-    output.innerHTML = (option[index]);
-    index++;
-    var output = document.getElementById("answer");
-    output.innerHTML = (answer[index]);
-    index++;
+
+
+// Wrap the code in a function that executes after the HTML content is loaded
+document.addEventListener("DOMContentLoaded", function() {
+    // Create an array of radio button elements
+    var answer = [
+        document.getElementById('ans1'),
+        document.getElementById('ans2'),
+        document.getElementById('ans3'),
+        document.getElementById('ans4')
+    ];
+
+    // Function to check the selected answer
+    function checkAnswer() {
+        var ans;
+        answer.forEach(curElement => {
+            if (curElement.checked) {
+                ans = curElement.id;
+          
+            }
+        });
+        return ans;
+    }
+
+
+
+// function to move to the next question
+function nextQuestion(){
+
+    index++
+
+    if(index < question.length){
+        displayQuestion();
+    }
+    else{
+        alert("End the quize");
+    }
 }
+// Here i Display the currrent question and option
+function displayQuestion(){
+    questionElement.innerHTML = question[index];
+    option1Element.innerHTML = option[index][0];
+    option2Element.innerHTML = option[index][1];
+    option3Element.innerHTML = option[index][2];
+    option4Element.innerHTML = option[index][3];
+    
+    }
+    displayQuestion();
+    var nextButton = document.querySelector(".btn button");
+    nextButton.addEventListener("click", function(){
+        var seletedAnswer = checkAnswer();
+        nextQuestion();
+    });
+});
