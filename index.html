@@ -7,8 +7,31 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="Quiz">
-        <h1 style.display="none">Multiple Choice Game</h1>
+    <div class="First-btn" id = "First-btn"><button>Welcome</button></div>
+
+
+
+
+    <div class="info-box" id="info-box">
+        <div class="info-title" > <span> Basic rules of this quiz game </span></div>
+        <div class="info-list">
+            <div class="info"> 1. You only have <span>20 seconds </span>to choose the answer.</div> 
+            <div class="info"> 2. You can only select <span>one option </span> at a time.</div> 
+            <div class="info"> 3. You <span> can't exit</span> from the quiz when its running.</div>
+            <div class="info"> 4. You will see <span> your score </span> when you finsh the quiz.</div> 
+          
+        </div>
+        <div class="button">
+            <button class="start" id="start-btn">Ready</button>
+        </div>
+
+    </div>
+   
+
+
+
+    <div class="Quiz" id="Quiz_container">
+        <h1 id="title">Multiple Choice Question</h1>
         
        <h2 id="question">Question will comes here</h2>
         <div id="options">
@@ -19,7 +42,9 @@
             <button class="btn">option D</button>
         </div>
 
-   
+        <div id="Remain-time"><span id="time"> 20 </span> s </div>
+
+     
         <button id="next-btn">Next</button>
 
      

@@ -26,9 +26,10 @@ body{
 .Quiz h1{
     font-size: 25px;
     color: #001e4d;
-    font-weight: 600;
+    font-weight: 600; 
     border-bottom: 1px solid #333;
     padding-bottom: 30px;
+    display: none;
     }
    
     .quize h2{
@@ -77,3 +78,68 @@ body{
         background: #e30620;
     
     }
+    #Remain-time{
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 20px;
+        padding: 5px 10px;
+        background-color: rgb(96, 18, 239);
+        border-radius: 4px;
+
+    }
+    .info-box{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        width: 550px;
+        background: white;
+        border-radius: 4px;
+
+    }
+    .info-title{
+        height: 50px;
+        width: 100%;
+        border-bottom: 1.5px solid black;
+        display: flex;
+        padding: 0 30px;
+        font-size: 25px;
+        font-weight: 600;
+        align-items: center;
+    }
+    .info-box .info-list{
+        padding: 15px 30px;
+    }
+    .info-box .info-list .info{
+        margin: 5px 0;
+        font-size: 20px;
+    }
+    .info-box .info-list .info span{
+        font-weight: 600;
+        color: #e30620;
+    }
+    .button{
+        background: #001e4d;
+        color: #fff;
+        font-weight: 500;
+        width: 90px;
+        border: 0;
+        padding: 10px;
+        margin: 20px auto 0;
+        border-radius: 4px;
+        cursor: pointer;
+    
+    }
+    .First-btn{
+        background: #26e177;
+        position: fixed;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        background-color: lightblue;
+        border: 1px solid black;
+    }
+   
+
+    
