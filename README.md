@@ -11,8 +11,19 @@ The final program is not the goal! The aim of the project is to show how you hav
 > You can use this section of the file to keep notes about your project as you work on it.
 
 # Project Summary
+Project title: Multiple Choice Question (MCQ) game.
 
-> Before the final submission date you should include a "PROJECT SUMMARY" in this section here. 
+Goal: The main purpose of this project is to develop an interactive quiz game that provides users with an engaging and educational experience. This is the beginning section of my dream project, I want to expand this project to a big version and make an app for humans especially children who have an interest to learn general knowledge about the world, history, sports, culture and so many. 
+
+Technology Stack: I used three different coding languages in this project
+
+HTML: In this section, I create a basic structure for this project like questions, options, remaining time, next question, and score button.   
+
+CSS: In this section, I designed my project and especially colored projects like size, shape, font size, etc.  
+
+JS: This is the main section of my project where I write and set code for questions, options, correct answers, and other important things. 
+
+
 
 # User Guide
 
