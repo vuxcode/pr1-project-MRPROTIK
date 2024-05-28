@@ -1,8 +1,9 @@
 # Time Report
-
-> Write about what you have done and how long you have worked on each part of the project.
-
-For example: 
-
-- 2022-10-24 18:00 Worked for 1 hour.
-  - *List the things you have done.*
+Here is my time report for this projct 
+   Task name	             Time (hours)
+1. Planning and initial design	10
+2. Work with HTML	              10
+3. Work with CSS	              5
+4. Work with JS	                30
+5. Testing and debugging	      30
+6. Maintenance and update	      ongoing
